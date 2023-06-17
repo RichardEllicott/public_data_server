@@ -13,7 +13,8 @@ try
     
     $sql = "CREATE TABLE users (
             name VARCHAR(32) NOT NULL PRIMARY KEY,
-            data VARCHAR(128)
+            data VARCHAR(1024),
+            created_time INT(6) UNSIGNED
             )";
 
     $conn->exec($sql);

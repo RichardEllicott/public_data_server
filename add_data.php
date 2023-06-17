@@ -9,9 +9,11 @@ try
 	// INSERT will only work once i think
 	// $statement = $conn->prepare("INSERT INTO leaderboard (name, score) VALUES (?, ?)");
 
-	$statement = $conn->prepare("REPLACE INTO users (name, data) VALUES (?, ?)"); # REPLACE INTO will replace matching primary key entries, easiest way to allow the record to be updated
+	$statement = $conn->prepare("REPLACE INTO users (name, data, created_time) VALUES (?, ?, ?)"); # REPLACE INTO will replace matching primary key entries, easiest way to allow the record to be updated
 
-	$statement->execute(array($_GET['name'], $_GET['data']));
+	$statement->execute(array($_GET['name'], $_GET['data'] , time()       ));
+	// $statement->execute(array($_GET['name'], $_GET['data'] , "1");
+
 	
 	echo "data updated!";
 }

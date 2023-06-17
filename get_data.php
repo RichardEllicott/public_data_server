@@ -5,14 +5,14 @@ include 'database_credentials.php'; // load passwords for database
 try
 {
 	$conn = new mysqli($servername, $username, $password, $dbname);
-	$sql = "SELECT name, data FROM users";
+	$sql = "SELECT name, data, created_time FROM users";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0)
 	{
 		while($row = $result->fetch_assoc())
 		{
 			// echo "Name: " . $row["name"]. " - Score: " . $row["data"]. "<br>";
-			echo $row["data"] . "<br>";
+			echo $row["data"] . "<br>" . $row["created_time"] . "<br>";
 		}
 	} else
 	{

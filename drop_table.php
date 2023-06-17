@@ -1,7 +1,7 @@
 <?php
 
 // WARNING THIS FILE DELETES THE TABLE!
-// don't upload if you don't want this... you need to drop a table somehow though if you want to change the data types
+// don't upload if you don't want this
 
 include 'database_credentials.php'; // load passwords for database
 
