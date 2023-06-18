@@ -4,10 +4,12 @@ include 'database_credentials.php'; // load passwords for database
 
 try
 {
-	$conn = new PDO('mysql:host=' . $servername . ';dbname=' . $dbname , $username, $password);
+    $conn = new PDO("mysql:host=$db_servername;dbname=$db_name",$db_username,$db_password);
 	
 	// INSERT will only work once i think
 	// $statement = $conn->prepare("INSERT INTO leaderboard (name, score) VALUES (?, ?)");
+
+
 
 	$statement = $conn->prepare("REPLACE INTO users (name, password, data, created_time) VALUES (?, ?, ?, ?)"); # REPLACE INTO will replace matching primary key entries, easiest way to allow the record to be updated
 
