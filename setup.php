@@ -13,6 +13,7 @@ try
     
     $sql = "CREATE TABLE users (
             name VARCHAR(32) NOT NULL PRIMARY KEY,
+            password VARCHAR(32),
             data VARCHAR(1024),
             created_time INT(6) UNSIGNED
             )";

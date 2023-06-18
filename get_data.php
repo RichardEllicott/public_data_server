@@ -8,11 +8,13 @@ try
 	$sql = "SELECT name, data, created_time FROM users";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0)
+
+	
 	{
 		while($row = $result->fetch_assoc())
 		{
 			// echo "Name: " . $row["name"]. " - Score: " . $row["data"]. "<br>";
-			echo $row["data"] . "<br>" . $row["created_time"] . "<br>";
+			echo strip_tags($row["data"]) . "<br>" . $row["created_time"] . "<br>"; # added strip tags to prevent tags breaking output
 		}
 	} else
 	{
