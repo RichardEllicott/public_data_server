@@ -4,6 +4,8 @@ very simple php server that allows posting of anonymous data typically from a cl
 
 by the nature of it's design is inherently insecure with minimum protection from attack, only used to post unvaluable data... i wrote this to allow multiplayer servers to advertise themselves and my videogame client's server browser to find these.
 
+there are no real laws on the internet, look at what even big companies do haha! however i only share a users IP to this server if he decides to advertise it... Xbox shares your IP with clients, it's all relative, when any game hits the internet you need to maintain a dicipline... do not create any weird ass remote code execution features etc, you have the force... use it!
+
 ## Requirements:
 
 -Webserver with PHP support
