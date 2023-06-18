@@ -4,6 +4,8 @@ very simple php server that allows posting of anonymous data typically from a cl
 
 by the nature of it's design is inherently insecure with minimum protection from attack, only used to post unvaluable data... i wrote this to allow multiplayer servers to advertise themselves and my videogame client's server browser to find these.
 
+security is a logical subject that no multiplayer code designer can ever avoid, it works much the same on computers as it does in the real world. If you meet a new freind in the real world... give him your phone number by all means, just don't give him the keys to your house!
+
 ## Requirements:
 
 -Webserver with PHP support
