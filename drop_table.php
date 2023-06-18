@@ -10,7 +10,7 @@ echo "Dropping database table...<br>";
 
 try
 {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname",$username, $password);
+    $conn = new PDO("mysql:host=$db_servername;dbname=$db_name",$db_username,$db_password);
     
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
