@@ -36,7 +36,10 @@ https://www.000webhost.com/
 based upon and adapted from but some of the code was odd forcing me to write this so won't have much left from this in the end:
 https://github.com/louis-e/PSL-Leaderboard-System
 
+-this one has a completely different style on each script, works but is odd (it's only intended for highscores)
+
+-from this legacy i need to adapt away the MYSQLi to PDO in the "get_data.php" file
+
 -password not yet implemented, will do but is still not designed for high security (if using user generated passwords, this will require bcrypt)
 
-
-
+-getting back the data, we are using the <br> tag, someone could shove some tags in to disrupt the people using this service.. potential DOS attack on my game itself really
